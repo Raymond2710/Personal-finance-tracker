@@ -1,0 +1,38 @@
+
+.transaction-form {
+  padding: 20px;
+}
+
+#transactionForm {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+input, select, #submitBtn {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+#submitBtn {
+  background: #17D14E;
+  color: #fff;
+}
+
+@media ( min-width: 760px) {
+  body {
+    text-align: center;
+  }
+  
+  #transactionForm {
+    width: 50%;
+    margin: 0 0 0 250px;
+    box-shadow: 2px 2px 8px rgb(32, 31, 31);
+    padding: 20px;
+    border-radius: 10px;
+  }
+}
