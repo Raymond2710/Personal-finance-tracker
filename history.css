@@ -1,0 +1,75 @@
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.all-transactions {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.transactions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 4px #444;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.edit {
+  background: #1C9F0F;
+  color: white;
+  font-size: 17px;
+  padding: 4px 9px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete {
+  background: #C72323;
+  color: white;
+  font-size: 17px;
+  padding: 4px 9px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+section.transaction-form {
+  z-index: 1;
+  width: 100%;
+  background: white;
+  position: fixed;
+  top: 50px;
+  bottom: 0;
+  display: none;
+}
+
+section.display {
+  display: block;
+}
+
+#remove {
+  position: absolute;
+  right: 20px;
+}

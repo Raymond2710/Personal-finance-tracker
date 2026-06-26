@@ -1,0 +1,129 @@
+section {
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card {
+  padding: 20px;
+  box-shadow: 2px 2px 8px #333;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.balance {
+  border-left: 5px solid #1167D6;
+}
+
+.income {
+  border-left: 5px solid #23D611;
+}
+
+.expenses {
+  border-left: 5px solid #D6112E;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.spendings {
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px #333;
+  padding: 20px;
+  margin: 20px;
+}
+
+#top-spending {
+  margin: 0 0 15px;
+}
+
+#warning {
+  color: #CB2121;
+}
+
+.recent-transactions {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.transactions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 4px #444;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.edit {
+  background: #1C9F0F;
+  color: white;
+  font-size: 17px;
+  padding: 4px 9px;
+  border-radius: 5px;
+}
+
+.delete {
+  background: #C72323;
+  color: white;
+  font-size: 17px;
+  padding: 4px 9px;  
+  border-radius: 5px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  border-radius: 20px;
+  margin: 10px 0;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.progress {
+  height: 18px;
+  border-radius: 20px;
+  background: #76D814;
+}
+
+section.transaction-form {
+  z-index: 1;
+  width: 100%;
+  background: white;
+  position: fixed;
+  top: 50px;
+  bottom: 0;
+  display: none;
+}
+
+section.display {
+  display: block;
+}
+
+#remove {
+  position: absolute;
+  right: 20px;
+}
+
+@media (max-width: 780px) {
+  
+ 
+}
