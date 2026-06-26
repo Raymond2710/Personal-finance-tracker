@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    Personal finance tracker
+  </title>
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/add_transaction.css">
+</head>
+<body>
+  
+  <nav class="menu-bar">
+    
+    <h3 class="logo">
+      Finance tracker
+    </h3>
+    <button class="menu-btn" id="menuBtn">
+      Menu
+    </button>
+    
+    <ul class="nav-links" id="menu">
+      <li>
+        <a href="home.html">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="add_transaction.html">
+          Add Transaction
+        </a>
+      </li>
+      <li>
+        <a href="history.html">
+          History
+        </a>
+      </li>
+      <li>
+        <a href="#" id="darkBtn">
+          Dark Mode
+        </a>
+      </li>
+      <li>
+        <a href="#" id="budget">
+          budget
+        </a>
+      </li>
+    </ul>
+    
+  </nav>
+  <div class="content">
+    <section class="dashboard">
+      
+      <div class="card balance">
+        <h3>Balance:</h3>
+        <h2 id="balance"></h2>
+      </div>
+      <div class="card income">
+        <h3>Income:</h3>
+        <h2 id="income"></h2>
+      </div>
+      <div class="card expenses">
+        <h3>Expenses:</h3>
+        <h2 id="expenses"></h2>
+      </div>
+      
+    </section>
+    
+    <section class="spendings">
+      
+      <p id="top-spending">
+        
+      </p>
+      <div class="monthly-summary">
+        <h3>
+          This month expenses summary
+        </h3>
+        <div id="summary">
+          
+        </div>
+      </div>
+      
+      <h2>This month budget</h2>
+      <p id="budgetLimit">
+        
+      </p>
+      <div class="progress-bar">
+        <div class="progress budget-bar"></div>
+      </div>
+      <p id="warning">
+        
+      </p>
+      
+    </section>
+    
+    <section class="progress-bars">
+      
+      <h3>Food</h3>
+      <div class="progress-bar">
+        <div class="progress food-bar"></div>
+      </div>
+      <h3>Transport</h3>
+      <div class="progress-bar">
+        <div class="progress transport-bar"></div>
+      </div>
+      <h3>Bills</h3>
+      <div class="progress-bar">
+        <div class="progress bills-bar"></div>
+      </div>
+      <h3>Entertainment</h3>
+      <div class="progress-bar">
+        <div class="progress entertainment-bar"></div>
+      </div>
+      <!--<h3>Others</h3>
+      <div class="progress-bar">
+        <div class="progress others bar"></div>
+      </div>-->
+      
+    </section>
+    
+    <section class="recent-transactions">
+      
+      <h2 style="margin-bottom:15px;">
+        Recent transactions
+      </h2>
+      <ul id="transactionLists">
+        
+        
+      </ul>
+      
+    </section>
+    
+    <section class="transaction-form">
+      <div id="remove">
+        ❌
+      </div><br>
+      <form id="transactionForm">
+        
+        <h2>
+          Add Transactions
+        </h2>
+        <input type="text" name="name" id="transactionName" placeholder="Transaction Name" required>
+        
+        <input type="number" name="amount" id="amount" placeholder="Amount" required>
+        
+        <select name="type" id="type">
+          <option value="income" id="incomeTransaction">
+            Income
+          </option>
+          <option value="expenses" id="expensesTransaction">
+            Expenses
+          </option>
+        </select>
+        
+        <select name="category" id="category">
+          <option value="food" id="food">
+            Food
+          </option>
+          <option value="transport" id="transport">
+            Transport
+          </option>
+          <option value="bills" id="bills">
+            Bills
+          </option>
+          <option value="entertainment" id="entertainment">
+            Entertainment
+          </option>
+          <option value="others" id="others">
+            Others
+          </option>
+        </select>
+        
+        <input type="date" name="datae" id="date" required>
+        
+        <button type="submit" id="submitBtn">
+          Add Transaction
+        </button>
+        
+      </form>
+    </section>
+  </div>
+  <script type="module" src="scripts/home.js"></script>
+  
+</body>
+</html>

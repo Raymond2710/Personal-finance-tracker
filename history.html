@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/history.css">
+  <link rel="stylesheet" href="styles/add_transaction.css">
+</head>
+
+<body>
+  
+  <nav class="menu-bar">
+  
+  <div class="logo">
+    Finance tracker
+  </div>
+  <button class="menu-btn" id="menuBtn">
+    Menu
+  </button>
+  
+  <ul class="nav-links" id="menu">
+    <li>
+      <a href="home.html">
+        Home
+      </a>
+    </li>
+    <li>
+      <a href="add_transaction.html">
+        Add Transaction
+      </a>
+    </li>
+    <li>
+      <a href="history.html">
+        History
+      </a>
+    </li>
+    <li>
+      <a href="#" id="darkBtn">
+        Dark Mode
+      </a>
+    </li>
+    <li>
+      <a href="#" id="budget">
+        budget
+      </a>
+    </li>
+  </ul>
+  
+</nav>
+<div class="content">
+  <section class="filters">
+    
+    <input type="search" name="search" id="search">
+    
+    <select name="category" id="category">
+      <option value="all">
+        All Categories
+      </option>
+      <option value="food" id="food">
+        Food
+      </option>
+      <option value="transport" id="transport">
+        Transport
+      </option>
+      <option value="bills" id="bills">
+        Bills
+      </option>
+      <option value="entertainment" id="entertainment">
+        Entertainment
+      </option>
+      <option value="others" id="others">
+        Others
+      </option>
+    </select>
+    
+    <select name="sort" id="sort">
+      
+      <option value="newest">
+        Newest
+      </option>
+      <option value="oldest">
+        Oldest
+      </option>
+      <option value="high">
+        Highest
+      </option>
+      <option value="low">
+        Lowest
+      </option>
+      
+    </select>
+    
+    <input type="date" id="dateSort">
+    
+  </section>
+  
+    <section class="all-transactions">
+      
+      <h2 style="margin-bottom:15px;">
+        All Transactions
+      </h2>
+      <ul id="transactionLists">
+        
+      </ul>
+            
+  
+    </section>
+    
+    <section class="transaction-form">
+      <div id="remove">
+        ❌
+      </div><br>
+      <form id="transactionForm">
+        
+        <h2>
+          Add Transactions
+        </h2>
+        <input type="text" name="name" id="transactionName" placeholder="Transaction Name" required>
+        
+        <input type="number" name="amount" id="amount" placeholder="Amount" required>
+        
+        <select name="type" id="type">
+          <option value="income" id="incomeTransaction">
+            Income
+          </option>
+          <option value="expenses" id="expensesTransaction">
+            Expenses
+          </option>
+        </select>
+        
+        <select name="category" id="category">
+          <option value="food" id="food">
+            Food
+          </option>
+          <option value="transport" id="transport">
+            Transport
+          </option>
+          <option value="bills" id="bills">
+            Bills
+          </option>
+          <option value="entertainment" id="entertainment">
+            Entertainment
+          </option>
+          <option value="others" id="others">
+            Others
+          </option>
+        </select>
+        
+        <input type="date" name="datae" id="date" required>
+        
+        <button type="submit" id="submitBtn">
+          Add Transaction
+        </button>
+        
+      </form>
+    </section>
+  </div>
+    
+  <script type="module" src="scripts/history.js"></script>
+  
+</body>
+
+</html>
